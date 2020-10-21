@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src= "js/form.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("form").submit(function(){
+          alert("Submitted");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#details").click(function(){
+          var display = $("#style");
+          display.animate({left: '850px'}, "slow");
+          display.animate({fontSize: '2em'}, "slow");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+
+
+    <div id="flip">Click here to Open the Form</div>
+    <div id="panel">
+      <form action="#" method="post" >
+        <div>
+          First name: <input type="text" name="FirstName" placeholder="Your First Name">
+        </div><br>
+        <div>
+          Last name: <input type="text" name="LastName" placeholder="Your Last Name">
+        </div><br>
+        <div>
+         Email: <input type="text" name="Email" placeholder="Your Email">
+        </div><br>
+        <div>
+          Message:<textarea name="Message" placeholder="Your Message"></textarea>
+        </div><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div>
+      <button id="details">Show Box</button>
+      <div id="style" style="background:#98bf21;height:200px;width:200px;position:absolute;">Successfully submitted after clicking Submit</div>
+    </div>
+
+  </body>
+</html>

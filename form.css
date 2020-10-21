@@ -1,0 +1,15 @@
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: cyan;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#box1{height:50px;width:300px;border:5px solid #fa4b2a;
+  background-color:#44c767;color:#fff;font-family:Verdana; margin:5px;
+  box-shadow:5px 5px 5px #444}
